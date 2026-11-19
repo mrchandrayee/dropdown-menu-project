@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a7b7d0">
+  <title>Dropdown Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="tags"><span>#MZcode</span><span>#HTML</span><span>#CSS</span></div>
+    <header class="heading">
+      <h1>Dropdown <em>Menu</em></h1>
+      <p>Full video on youtube channel: <strong>@mzcode01</strong></p>
+    </header>
+
+    <section class="demo" aria-label="Dropdown menu demo">
+      <div class="profile-wrap">
+        <button class="profile-button" id="profileButton" type="button"
+          aria-haspopup="true" aria-expanded="false" aria-controls="dropdownMenu">
+          <span class="item-icon profile-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 4.2a3.1 3.1 0 1 1 0 6.2 3.1 3.1 0 0 1 0-6.2Zm0 12.1a7.2 7.2 0 0 1-5.6-2.7c.1-1.9 3.7-2.9 5.6-2.9s5.5 1 5.6 2.9a7.2 7.2 0 0 1-5.6 2.7Z"/></svg>
+          </span>
+          <span class="item-txt">Profile</span>
+          <span class="chevron" aria-hidden="true">⌄</span>
+        </button>
+
+        <ul class="dropdown-menu" id="dropdownMenu" aria-label="Profile options" hidden>
+          <li class="menu-item">
+            <a href="#dashboard" class="menu-link">
+              <span class="item-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></span>
+              <span class="item-txt">Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#setting" class="menu-link">
+              <span class="item-icon"><svg viewBox="0 0 24 24"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/><path d="m19.4 13.5 1.1.9-1.1 2-1.4-.5a7.7 7.7 0 0 1-1.4.8l-.2 1.5h-2.3l-.4-1.4a7.7 7.7 0 0 1-1.6 0l-.7 1.3-2.1-.9.2-1.5a7.7 7.7 0 0 1-1.1-1.2l-1.5.2-.8-2.1 1.2-.9a7.7 7.7 0 0 1 0-1.6l-1.2-.9.8-2.1 1.5.2a7.7 7.7 0 0 1 1.1-1.2l-.2-1.5 2.1-.9.7 1.3a7.7 7.7 0 0 1 1.6 0l.4-1.4h2.3l.2 1.5a7.7 7.7 0 0 1 1.4.8l1.4-.5 1.1 2-1.1.9a7.7 7.7 0 0 1 0 1.6Z"/></svg></span>
+              <span class="item-txt">Setting</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <button type="button" class="menu-link logout" id="logoutButton">
+              <span class="item-icon"><svg viewBox="0 0 24 24"><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5"/><path d="M14 16l4-4-4-4M8 12h10"/><path d="M14 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5"/></svg></span>
+              <span class="item-txt">Log Out</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <p class="status" id="status" role="status" aria-live="polite">Click Profile to open the dropdown menu.</p>
+    </section>
+    <footer>Check description for source code!</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
